@@ -36,6 +36,17 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/styles/css/open-iconic-bootstrap.min.css",
+              "./src/assets/styles/css/animate.css",
+              "./src/assets/styles/css/owl.theme.default.min.css",
+              "./src/assets/styles/css/magnific-popup.css",
+              "./src/assets/styles/css/aos.css",
+              "./src/assets/styles/css/ionicons.min.css",
+              "./src/assets/styles/css/flaticon.css",
+              "./src/assets/styles/css/bootstrap-datepicker.css",
+              "./src/assets/styles/css/jquery.timepicker.css",
+              "./src/assets/styles/css/icomoon.css",
+              "./src/assets/styles/css/style.css",
 
               "src/styles.css"
             ],

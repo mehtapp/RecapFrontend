@@ -1,6 +1,6 @@
 <div class="sidebar-box">
   <div class="categories">
     <h3>Renkler</h3>
-    <li><a href="#">Mor<span>(12)</span></a></li>
+    <li *ngFor="let colour of colours"><a href="#">{{colour.name}}</a></li>
   </div>
 </div>

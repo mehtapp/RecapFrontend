@@ -10,6 +10,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { CarComponent } from './components/car/car.component';
 import { RentalComponent } from './components/rental/rental.component';
+import { BrandService } from './services/brand/brand.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,9 +27,10 @@ import { RentalComponent } from './components/rental/rental.component';
   imports: [
 
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  // providers: [BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

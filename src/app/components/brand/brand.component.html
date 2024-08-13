@@ -2,11 +2,8 @@
 <div class="sidebar-box">
   <div class="categories">
     <h3>Markalar</h3>
-    <li><a href="#">Ferrari <span>(12)</span></a></li>
-    <li><a href="#">Cheverolet <span>(22)</span></a></li>
-    <li><a href="#">Ford <span>(37)</span></a></li>
-    <li><a href="#">Subaru <span>(42)</span></a></li>
-    <li><a href="#">Toyota <span>(14)</span></a></li>
-    <li><a href="#">Mistsubishi <span>(140)</span></a></li>
+    <li *ngFor="let brand of brands"><a href="#">{{brand.name}} <span>()</span></a></li>
+
   </div>
+  {{message}}
 </div>
