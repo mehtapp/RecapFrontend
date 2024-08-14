@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">CorporateCust d</th>
+      <th scope="col">UserId</th>
+      <th scope="col">CompanyName</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let corporateCustomer of corporateCustomers">
+
+      <td>{{corporateCustomer.corporateCustomerId}}</td>
+      <td>{{corporateCustomer.userId}}</td>
+      <td>{{corporateCustomer.corporateName}}</td>
+      <td>{{corporateCustomer.userName}}</td>
+      <td>{{corporateCustomer.email}}</td>
+      <td>{{corporateCustomer.status}}</td>
+    </tr>
+
+  </tbody>
+</table>
+{{message}}
+{{dataLoaded}}

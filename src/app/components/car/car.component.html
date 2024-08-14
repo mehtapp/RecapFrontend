@@ -1,4 +1,31 @@
-<!--Cars-->
+
+  <!--Cars-->
+
+
+<div class="d-flex flex-wrap" *ngFor="let car of cars">
+<div class="carCard col-md-6">
+  <div class="car-wrap rounded">
+    <div class="img rounded d-flex align-items-end" style="background-image: url(https://localhost:7232/WebAPI/wwwroot/Uploads/Images{{car.imagePaths[0]}});">
+    </div>
+    <div class="text">
+      <h2 class="mb-0"><a href="car-single.html">{{car.brandName}}</a></h2>
+
+      <div class="d-flex mb-3">
+        <span class="cat">{{car.modelYear | date:'yyyy' }} / {{car.colourName}}</span>
+        <p class="price ml-auto">{{car.dailyPrice}} TL <span>/Günlük</span></p>
+
+      </div>
+
+      <p class="d-flex mb-0 d-block">
+        <a href="#" class="btn btn-primary py-2 mr-1">Şimdi Kirala</a>
+        <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
 <div class="carCard col-md-6">
   <div class="car-wrap rounded">
     <div class="img rounded d-flex align-items-end" style="background-image: url(../assets/styles/images/car-1.jpg);">
@@ -173,4 +200,5 @@
       <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     </div>
   </div>
+</div>
 </div>

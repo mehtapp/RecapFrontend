@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">In Id</th>
+      <th scope="col">UserId</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let individualCustomer of individualCustomers">
+
+      <td>{{individualCustomer.individualCustomerId}}</td>
+      <td>{{individualCustomer.userId}}</td>
+      <td>{{individualCustomer.firstName}}</td>
+      <td>{{individualCustomer.lastName}}</td>
+      <td>{{individualCustomer.userName}}</td>
+      <td>{{individualCustomer.email}}</td>
+      <td>{{individualCustomer.status}}</td>
+    </tr>
+
+  </tbody>
+</table>
+{{message}}
+{{dataLoaded}}

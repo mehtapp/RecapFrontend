@@ -1,0 +1,27 @@
+Kurumsal Müşteri
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">BrandName</th>
+      <th scope="col">Müşteri</th>
+
+      <th scope="col">rentDate</th>
+      <th scope="col">returnDate</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr *ngFor="let rental of rentals">
+
+      <td>{{rental.id}}</td>
+      <td>{{rental.brandName}}</td>
+      <td>{{rental.userTitle}}</td>
+      <td>{{rental.rentDate | date:'dd-MM-yyyy'}}</td>
+      <td>{{rental.returnDate | date:'dd-MM-yyyy'}}</td>
+
+    </tr>
+
+  </tbody>
+</table>
